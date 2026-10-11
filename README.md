@@ -19,31 +19,33 @@
 
 ## 📌 Executive Summary
 
-Mechatronics Engineering student with a focus on mechanical kinematic design, production-grade PCB engineering (Altium Designer), and autonomous robotics simulation. Passionate about translating textbook mathematical theory into functional physical machines through rapid 3D printing prototyping, precision gear mechanisms, and closed-loop feedback systems.
+Mechatronics Engineering student with hands-on experience in mechanical kinematic design, production-grade PCB engineering (Altium Designer), industrial robotics (ABB), computer vision (semantic segmentation, pose estimation), and autonomous robotics simulation. Passionate about translating textbook theory into functional physical machines through rapid 3D printing prototyping, precision gear mechanisms, and closed-loop feedback systems.
 
 ---
 
-## 📁 Repository Directory Structure
+## 📁 Repository Structure
 
 ```text
-├── 01-hexapod-walking-robot/          # MTR 221 Theory of Machines project (SolidWorks, STLs, Kinematics)
-│   ├── cad/                          # 3D printable STL mechanical parts
-│   ├── media/                        # Prototype, gear cutaway & simulation photos
-│   └── README.md                     # Deep-dive kinematic & gear train documentation
-├── 02-eri-robotics-simulation/        # Electronics Research Institute (ERI) summer track
-│   ├── media/                        # Webots simulation environment screenshot
-│   └── README.md                     # Dynamic physics, kinematics & sensor loop notes
-├── 03-egsa-pcb-design/               # Egyptian Space Agency (EgSA) 60-hr hardware workshop
-│   ├── bom/                          # Bill of Materials (UNO.xlsx)
-│   └── README.md                     # Altium Designer schematics & manufacturing docs
-├── 04-soilab-air-quality-robot/       # SoiLAB Eco-Warrior Camp project (Sharjah, UAE)
-│   └── README.md                     # Two-wheeled balancing Segway with environmental sensing
-└── assets/                           # Profile photo, E-JUST logo & PDF CV
+├── 01-hexapod-walking-robot/          # MTR 221 Theory of Machines — single-motor hexapod
+│   ├── media/                        # Prototype photos, gear cutaway, walking demo video
+│   └── README.md                     # Kinematic analysis & mechanism design docs
+├── 02-eri-robotics-simulation/        # ERI Summer 2026 — Robotics & Computer Vision track
+│   ├── media/                        # ABB robots, segmentation, pose estimation, demo video
+│   └── README.md                     # Full program writeup & technical curriculum
+├── 03-egsa-pcb-design/               # Egyptian Space Agency — 60-hr PCB workshop
+│   ├── media/                        # Arduino Uno & power supply 3D models & routing
+│   └── README.md                     # Altium Designer workflow & board documentation
+├── 04-soilab-air-quality-robot/       # SoiLAB Eco-Warrior Camp — Sharjah, UAE
+│   └── README.md                     # Self-balancing Segway with environmental sensing
+├── 05-etba3ly-3d-printing/            # Side venture — custom 3D printing services
+│   ├── media/                        # Sample prints
+│   └── README.md                     
+└── assets/                           # Profile photo, E-JUST logo, CV
 ```
 
 ---
 
-## 🚀 Featured Engineering Projects
+## 🚀 Featured Projects
 
 ### 1. [Single-Actuator Gear-Driven Hexapod Walking Robot](01-hexapod-walking-robot/)
 
@@ -51,7 +53,7 @@ Mechatronics Engineering student with a focus on mechanical kinematic design, pr
 > **Team**: Abdallah Ahmed, Mohamed Eldaw, Mohamed Aborehab  
 > **Institution**: Egypt-Japan University of Science and Technology (E-JUST)
 
-Designed, simulated, and manufactured a functional six-legged robot mimicking biological locomotion using a **single electric motor**. Instead of multi-servo actuation, the robot relies on purely mechanical synchronization via planar linkages and an internal bevel gear train.
+Designed, simulated, and manufactured a functional six-legged robot mimicking biological locomotion using a **single electric motor**. The robot relies on purely mechanical synchronization via planar linkages and an internal bevel gear train.
 
 <div align="center">
 <table>
@@ -66,65 +68,95 @@ Designed, simulated, and manufactured a functional six-legged robot mimicking bi
 </table>
 </div>
 
-#### Technical Specification Dossier:
-- **Planar Mobility**: Validated using Grübler’s criterion for single degree of freedom ($M = 1$):
-  $$M = 3(n - 1) - 2j_1 - j_2$$
-  *Where $n = 4$ links, $j_1 = 4$ revolute pin joints, $j_2 = 0 \implies M = 1$ DOF per leg module.*
-- **Linkage Synthesis**: Compliant with Grashof's condition ($s + l \le p + q$) configured as a crank-rocker mechanism generating an oval foot locus for stable ground clearance.
-- **Power Transmission**: High-torque internal gearbox utilizing 90° bevel gears and spur pinions to distribute symmetric torque across opposing leg banks.
-- **Fabrication**: Modeled in SolidWorks, sliced with optimized gyroid infill (40%), and FDM 3D printed with $\pm 0.15\text{ mm}$ joint tolerances.
-- **Files available**: STL part files are accessible in [`01-hexapod-walking-robot/cad/`](01-hexapod-walking-robot/cad/).
+#### Technical Highlights:
+- **Planar Mobility**: Grübler's criterion — $M = 3(n-1) - 2j_1 - j_2 = 1\text{ DOF}$ per leg module
+- **Linkage Synthesis**: Grashof's condition ($s + l \le p + q$) — crank-rocker mechanism generating an oval foot locus
+- **Power Transmission**: 90° bevel gears + spur pinions distributing symmetric torque across opposing leg banks
+- **Fabrication**: SolidWorks → FDM 3D printed with 40% gyroid infill, $\pm 0.15\text{ mm}$ joint tolerances
 
 ---
 
-### 2. [Autonomous Mobile Robot Kinematics & Simulation](02-eri-robotics-simulation/)
+### 2. [ERI Robotics & Computer Vision Internship](02-eri-robotics-simulation/)
 
-> **Organization**: Electronics Research Institute (ERI), Cairo, Egypt  
-> **Track**: Robotics & Autonomous Systems Track (Summer 2026)  
-> **Tools**: Webots Robot Simulator, MATLAB / Simulink
+> **Institution**: Electronics Research Institute (ERI) — Cairo, Egypt  
+> **Track**: Robotics & Computer Vision (Summer 2026)  
+> **Duration**: ~60 hours, 12 intensive in-person sessions
 
-Intensive research internship at Egypt's National Electronics Research Institute. Formulated mathematical kinematic models for wheeled mobile robots and constructed rigid-body physics simulations.
+Intensive research internship at Egypt's national Electronics Research Institute. Worked with industrial ABB robots, implemented deep learning-based computer vision pipelines, and programmed robotic arms using RAPID.
 
 <div align="center">
-  <img src="02-eri-robotics-simulation/media/eri-webots-robot.jpg" alt="ERI Webots Robot Simulation" width="600" />
+<table>
+  <tr>
+    <td align="center"><b>ABB Industrial Robot Arm</b><br><img src="02-eri-robotics-simulation/media/eri-abb-robot-arm.jpeg" width="380" /></td>
+    <td align="center"><b>ABB YuMi Dual-Arm Cobot</b><br><img src="02-eri-robotics-simulation/media/eri-abb-yumi-dual-arm.jpeg" width="380" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>DeepLabV3 vs FCN Segmentation</b><br><img src="02-eri-robotics-simulation/media/eri-deeplab-vs-fcn-segmentation.jpeg" width="380" /></td>
+    <td align="center"><b>YOLOv8 Pose Estimation</b><br><img src="02-eri-robotics-simulation/media/eri-yolov8-pose-estimation.jpeg" width="380" /></td>
+  </tr>
+</table>
 </div>
 
-#### Key Research Work:
-- **Kinematic Formulation**: Derived kinematic matrices for differential drive and 4-wheel skid-steer chassis.
-- **Dynamic Physics in Webots**: Modeled wheel traction, center-of-mass distribution, and actuator saturation under simulated floor friction.
-- **Sensor-in-the-Loop Simulation**: Integrated simulated ultrasonic rangefinders and IMU sensor streams with a closed-loop reactive obstacle avoidance controller.
-- **Documentation**: See [`02-eri-robotics-simulation/README.md`](02-eri-robotics-simulation/README.md).
+#### Key Work:
+- **Industrial Robotics**: Programmed ABB IRB 1200 & YuMi (14 DOF) — RAPID language, FlexPendant, lead-through teaching
+- **Semantic Segmentation**: Comparative study of DeepLabV3 (Atrous/ASPP) vs FCN architectures — mIoU benchmarks
+- **Pose Estimation**: YOLOv8-Pose pipeline — 17 COCO keypoint skeleton detection for safe human-robot collaboration
+- **Simulation**: Webots + MATLAB/Simulink — differential drive kinematics, sensor-in-the-loop obstacle avoidance
 
 ---
 
-### 3. [End-to-End PCB Design: Arduino Uno R3 & 5V Regulated Power Supply](03-egsa-pcb-design/)
+### 3. [End-to-End PCB Design: Arduino Uno R3 & 5V Power Supply](03-egsa-pcb-design/)
 
-> **Organization**: Egyptian Space Agency (EgSA), Cairo, Egypt  
-> **Program**: Intensive 60-Hour Hardware & PCB Design Workshop (Jan–Feb 2026)  
+> **Organization**: Egyptian Space Agency (EgSA) — Cairo, Egypt  
+> **Program**: 60-Hour Hardware & PCB Design Workshop (Jan–Feb 2026)  
 > **CAD Suite**: Altium Designer  
-> **Certification**: Comprehensive PCB Design Certificate issued by EgSA
+> **Certification**: Comprehensive PCB Design Certificate — EgSA
 
-Engineered production-grade printed circuit boards from initial schematic capture to manufacturing deliverables.
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><b>Arduino Uno R3 — Altium 3D Model</b><br><img src="03-egsa-pcb-design/media/uno-pcb-3d-model.jpg" width="380" /></td>
+    <td align="center"><b>2-Layer Layout & Routing</b><br><img src="03-egsa-pcb-design/media/uno-pcb-routing.jpg" width="380" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>5V Regulated Power Supply (3D)</b><br><img src="03-egsa-pcb-design/media/power-supply-3d-model.jpg" width="380" /></td>
+    <td align="center"><b>Power Supply Routing</b><br><img src="03-egsa-pcb-design/media/power-supply-pcb-routing.jpg" width="380" /></td>
+  </tr>
+</table>
+</div>
 
-#### Engineering Lifecycle Executed:
-- **Custom Library Creation**: Built schematic symbols and IPC-compliant 3D footprints with accurate courtyard boundaries from component datasheets.
-- **Schematic Capture**: Configured ATmega328P microcontroller circuit, crystal oscillator clocking, decoupling networks, and low-ripple 5V linear regulation.
-- **Routing & DRC**: Enforced strict Design Rule Checks (DRC), routed high-current power traces, maintained ground polygon pours, and generated manufacturing Gerbers, drill files, and BOM.
-- **Deliverables**: Bill of Materials available in [`03-egsa-pcb-design/bom/UNO.xlsx`](03-egsa-pcb-design/bom/UNO.xlsx).
+#### Engineering Lifecycle:
+- **Custom Library Creation**: Schematic symbols + IPC-compliant 3D footprints from datasheets
+- **Schematic Capture**: ATmega328P MCU circuit, crystal oscillator, decoupling networks, 5V linear regulation
+- **Routing & DRC**: Ground polygon pours, high-current power traces, thermal relief vias, strict DRC
+- **Deliverables**: Gerber files, NC drill files, assembly documentation
 
 ---
 
-### 4. [Autonomous Air Quality Monitoring Segway Robot](04-soilab-air-quality-robot/)
+### 4. [Air Quality Monitoring Segway Robot](04-soilab-air-quality-robot/)
 
-> **Program**: SoiLAB Eco-Warrior Innovation Camp, Sharjah, UAE (Aug–Sep 2023)  
+> **Program**: SoiLAB Eco-Warrior Innovation Camp — Sharjah, UAE (Aug–Sep 2023)  
 > **Domain**: Mobile Robotics, Inverted Pendulum Dynamics, Environmental IoT
 
-Developed a functional two-wheeled self-balancing mobile robotics platform equipped with environmental sensors to detect and map urban air quality metrics in real time.
+Two-wheeled self-balancing mobile platform with environmental sensors for real-time air quality mapping.
 
 #### Technical Highlights:
-- **Dynamics & Control**: Formulated two-wheeled inverted pendulum dynamics; stabilized pitch angle using discrete PID feedback with 6-axis IMU sensor fusion.
-- **Sensor Integration**: Interfaced particulate matter (PM2.5/PM10) and gas sensors for autonomous environmental sampling.
-- **Hardware Prototyping**: Fabricated chassis using laser cutting and 3D printing.
+- **Dynamics & Control**: Inverted pendulum model stabilized with discrete PID + 6-axis IMU sensor fusion
+- **Environmental Sampling**: PM2.5/PM10 particulate matter + gas detection sensors, data logged with odometry coordinates
+- **Hardware**: Laser-cut + 3D printed chassis, weight distribution optimized for minimal balancing power
+
+---
+
+### 5. [Etba3ly — 3D Printing Services](05-etba3ly-3d-printing/)
+
+> **Website**: [etba3ly.store](https://etba3ly.store)
+
+A small 3D printing business I run — offering custom prototyping, scale models, and functional parts on demand for engineering students and hobbyists.
+
+<div align="center">
+  <img src="05-etba3ly-3d-printing/media/f35-model.jpeg" alt="3D Printed F-35" width="350" />
+  <br><em>FDM 3D printed F-35 Lightning II desk model</em>
+</div>
 
 ---
 
@@ -133,27 +165,29 @@ Developed a functional two-wheeled self-balancing mobile robotics platform equip
 | Engineering Domain | Tools & Technologies | Focus Areas |
 | :--- | :--- | :--- |
 | **Mechanical & CAD** | SolidWorks, Fusion 360 | Kinematic synthesis, linkage design, gear trains, GD&T, 3D printing |
-| **PCB & Electronics** | Altium Designer | Schematic capture, custom 3D footprints, 2-layer routing, DRC, Gerbers |
-| **Robotics & Simulation** | Webots, MATLAB, Simulink | Wheeled robot kinematics, multi-body simulation, control loops |
-| **Embedded & Code** | C, C++, Arduino, Python, Git,Assembly language | Bare-metal firmware, sensor interfacing (I2C, SPI, UART), version control |
-| **Languages** | Arabic (Native), English (Advanced), Japanese (Beginner at E-JUST) | Technical reporting, cross-cultural engineering collaboration |
+| **PCB & Electronics** | Altium Designer | Schematic capture, custom footprints, 2-layer routing, DRC, Gerbers |
+| **Robotics & Simulation** | Webots, MATLAB, Simulink, ABB RobotStudio | Industrial arm programming (RAPID), wheeled robot kinematics, control loops |
+| **Computer Vision** | PyTorch, YOLOv8, OpenCV | Semantic segmentation (DeepLabV3, FCN), pose estimation, object detection |
+| **Embedded & Code** | C, C++, Arduino, Python, Git, Assembly | Bare-metal firmware, sensor interfacing (I2C, SPI, UART), version control |
+| **Languages** | Arabic (Native), English (Advanced), Japanese (Beginner — E-JUST) | Technical reporting, cross-cultural engineering collaboration |
 
 ---
 
-## 🎓 Education & Academic Background
+## 🎓 Education
 
 - **Egypt-Japan University of Science and Technology (E-JUST)** — Alexandria, Egypt  
   *Bachelor of Engineering in Mechatronics Engineering* (2024 – June 2028)  
-  *Core Coursework*: MTR 221 Theory of Machines, Feedback Control Systems, Robotics & Kinematics, Microcontroller Systems, Mechanical Vibrations.
+  *Core Coursework*: Theory of Machines, Feedback Control Systems, Robotics & Kinematics, Microcontroller Systems, Mechanical Vibrations
+
 - **AlNoor International School** — Sharjah, UAE  
   *Secondary School Certificate (MoE Curriculum, 2024)*
 
 ---
 
-## 📬 Contact & Inquiries
+## 📬 Contact
 
 - **Email**: [3bdallahhahmed@gmail.com](mailto:3bdallahhahmed@gmail.com)
 - **Phone**: [+20 1050018069](tel:+201050018069)
 - **LinkedIn**: [linkedin.com/in/abdallah-ahmed-4138ba344](https://www.linkedin.com/in/abdallah-ahmed-4138ba344/)
 - **GitHub**: [github.com/3bdallahhahmed](https://github.com/3bdallahhahmed)
-- **Curriculum Vitae**: [Download CV (PDF)](assets/Abdalla_Ahmed_cv.pdf)
+- **CV**: [Download PDF](assets/Abdalla_Ahmed_cv.pdf)

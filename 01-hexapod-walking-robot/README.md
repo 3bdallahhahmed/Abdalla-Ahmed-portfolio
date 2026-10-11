@@ -17,6 +17,10 @@ Course project for **MTR 221: Theory of Machines** at **Egypt-Japan University o
 | **Internal Bevel Gear Train** | **Kinematic Trajectory Synthesis** |
 | ![Bevel Gear Train](media/hexapod-gears.jpg) | ![Kinematic Foot Path](media/hexapod-kinematics.jpg) |
 
+### Walking Demo
+
+> 🎥 *See the hexapod in action: `media/hexapod-walking-demo.mp4`*
+
 ---
 
 ## Kinematic Analysis & Mechanism Design
@@ -45,16 +49,8 @@ Where $s$ is the driving crank link and $l$ is the coupler link. The resulting w
 
 ---
 
-## 3D CAD & Manufacturing Files
-
-The CAD parts are located in the [`cad/`](cad/) directory:
-* [`Upper part.stl`](cad/Upper%20part.stl) — Main chassis chassis plate
-* [`the tall link.STL`](cad/the%20tall%20link.STL) — Long vertical rocker linkage
-* [`upper short link.STL`](cad/upper%20short%20link.STL) — Upper rocker link
-* [`Part1.STL`](cad/Part1.STL) — Pivot bracket mount
-
-### 3D Printing Parameters:
+## 3D Printing Parameters
 * **Material**: PLA / PETG
 * **Infill**: 40% Gyroid
 * **Layer Height**: 0.2 mm
-* **Pin Tolerances**: $\pm 0.15\text{ mm}$ for smooth joint pivoting without play.
+* **Pin Tolerances**: $\pm 0.15\text{ mm}$ for smooth joint pivoting without play
