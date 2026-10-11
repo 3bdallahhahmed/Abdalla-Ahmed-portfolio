@@ -39,7 +39,7 @@ I am a 3rd-year Mechatronics Engineering student passionate about mechanical lin
 
 ## 🚀 Key Projects
 
-- 🦾 **[Single-Actuator Hexapod Walking Robot](https://github.com/your-username/mechatronics-portfolio/tree/main/01-hexapod-walking-robot)**: Course project for MTR 221 Theory of Machines under Dr. Ayman Nada at E-JUST. Single-motor actuation using Grübler-verified linkages and internal bevel gear split.
-- 🔬 **[Autonomous Mobile Robot Simulation](https://github.com/your-username/mechatronics-portfolio/tree/main/02-eri-robotics-simulation)**: Robotics track at the Electronics Research Institute (ERI), Cairo. Dynamic physics in Webots & Simulink.
-- ⚡ **[End-to-End PCB Design](https://github.com/your-username/mechatronics-portfolio/tree/main/03-egsa-pcb-design)**: Production-ready Arduino Uno R3 & 5V Power Supply in Altium Designer from Egyptian Space Agency (EgSA).
-- 🛴 **[Autonomous Air Quality Segway Robot](https://github.com/your-username/mechatronics-portfolio/tree/main/04-soilab-air-quality-robot)**: Two-wheeled self-balancing environmental monitoring robot developed in Sharjah, UAE.
+- 🦾 **[Single-Actuator Hexapod Walking Robot](https://github.com/3bdallahhahmed/mechatronics-portfolio/tree/main/01-hexapod-walking-robot)**: Course project for MTR 221 Theory of Machines under Dr. Ayman Nada at E-JUST. Single-motor actuation using Grübler-verified linkages and internal bevel gear split.
+- 🔬 **[Autonomous Mobile Robot Simulation](https://github.com/3bdallahhahmed/mechatronics-portfolio/tree/main/02-eri-robotics-simulation)**: Robotics track at the Electronics Research Institute (ERI), Cairo. Dynamic physics in Webots & Simulink.
+- ⚡ **[End-to-End PCB Design](https://github.com/3bdallahhahmed/mechatronics-portfolio/tree/main/03-egsa-pcb-design)**: Production-ready Arduino Uno R3 & 5V Power Supply in Altium Designer from Egyptian Space Agency (EgSA).
+- 🛴 **[Autonomous Air Quality Segway Robot](https://github.com/3bdallahhahmed/mechatronics-portfolio/tree/main/04-soilab-air-quality-robot)**: Two-wheeled self-balancing environmental monitoring robot developed in Sharjah, UAE.

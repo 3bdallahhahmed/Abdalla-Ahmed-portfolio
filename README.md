@@ -155,4 +155,5 @@ Developed a functional two-wheeled self-balancing mobile robotics platform equip
 - **Email**: [3bdallahhahmed@gmail.com](mailto:3bdallahhahmed@gmail.com)
 - **Phone**: [+20 1050018069](tel:+201050018069)
 - **LinkedIn**: [linkedin.com/in/abdallah-ahmed-4138ba344](https://www.linkedin.com/in/abdallah-ahmed-4138ba344/)
+- **GitHub**: [github.com/3bdallahhahmed](https://github.com/3bdallahhahmed)
 - **Curriculum Vitae**: [Download CV (PDF)](assets/Abdalla_Ahmed_cv.pdf)
