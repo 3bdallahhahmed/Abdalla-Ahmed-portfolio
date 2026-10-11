@@ -1,0 +1,65 @@
+/* Modern Engineering Portfolio Custom Styles */
+
+/* Base font adjustments */
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  scroll-padding-top: 5rem;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(161, 161, 170, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(161, 161, 170, 0.5);
+}
+
+/* Filter Buttons */
+.active-filter {
+  background-color: #f97316 !important;
+  color: #ffffff !important;
+  border-color: #ea580c !important;
+}
+
+/* Subtle Technical Grid Overlay on Hero */
+#about {
+  position: relative;
+}
+
+/* Code and tag styling */
+.tech-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+/* Print Stylesheet for clean CV exporting */
+@media print {
+  header, #filter-buttons, #theme-toggle, footer, button {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd !important;
+    break-inside: avoid;
+    box-shadow: none !important;
+    margin-bottom: 1rem;
+  }
+}
