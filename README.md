@@ -135,7 +135,7 @@ Developed a functional two-wheeled self-balancing mobile robotics platform equip
 | **Mechanical & CAD** | SolidWorks, Fusion 360 | Kinematic synthesis, linkage design, gear trains, GD&T, 3D printing |
 | **PCB & Electronics** | Altium Designer | Schematic capture, custom 3D footprints, 2-layer routing, DRC, Gerbers |
 | **Robotics & Simulation** | Webots, MATLAB, Simulink | Wheeled robot kinematics, multi-body simulation, control loops |
-| **Embedded & Code** | C, C++, Arduino, Python, Git | Bare-metal firmware, sensor interfacing (I2C, SPI, UART), version control |
+| **Embedded & Code** | C, C++, Arduino, Python, Git,Assembly language | Bare-metal firmware, sensor interfacing (I2C, SPI, UART), version control |
 | **Languages** | Arabic (Native), English (Advanced), Japanese (Beginner at E-JUST) | Technical reporting, cross-cultural engineering collaboration |
 
 ---
